@@ -49,10 +49,11 @@ Xcode version: Xcode 7.2.1 Build version 7C1002
 
 ####Use the service to get the data
 Page.ts
-
+```
 errorMessage: string;
   heroes: Hero[];
-```javascript
+
+javascript
     // have a string, do the search
      this._dataService.getSearchResultsAng(q) 
         .subscribe(
@@ -63,15 +64,20 @@ errorMessage: string;
                   loading.dismiss()
           } ) 
 ```
+
+###display search result from api
+Page.html
 ```
-###Page.html
-display search result from api
 <ion-item text-wrap *ngFor="let hero of heroes | values" >
       {{hero.fields.item_name}}
     </ion-item>
 
 ```
+
+
 ###Create the object to bing to api result
+
+```
 export class Hero {  
   _id: string;
   fields: [ {
