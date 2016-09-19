@@ -20,6 +20,7 @@ Xcode version: Xcode 7.2.1 Build version 7C1002
 ```
 
 ####Function in service to query REST API
+dataservice.ts
 ```javascript
     getSearchResultsAng(_searchString): Observable<Hero[]> {
 
@@ -75,7 +76,7 @@ Page.html
 ```
 
 
-###Create the object to bing to api result
+###Create the object to bind to api result
 
 ```
 export class Hero {  
